@@ -1,4 +1,4 @@
-# OpenMTS
+# OpenMTS - Open-source Machinelearning Toolset
 
 **Pretrained classical ML models. One import. Many jobs.**
 
