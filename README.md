@@ -83,7 +83,7 @@ The `face_gender` models were not trained on normalized data.
 
 This was intentional — the tiers performed as planned, and the launch accuracies met our targets.
 
-Plus (SVM) also proved to be more powerful on real inputs than any other model in the family — stable, confident, and consistent on live video.
+Plus (SVM) also proved to be more powerful on real inputs than any other model in the family — stable, confident, and consistent.
 
 Normalized data was planned for `digits` from the start, and all models from that point onward will be trained on normalized data.
 
