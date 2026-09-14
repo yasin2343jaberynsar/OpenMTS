@@ -102,6 +102,18 @@ Classical ML is not deep learning. These models are built to be **small, fast, o
 
 Deep learning (YOLO, Hugging Face, etc.) can beat OpenMTS on hard tasks. That's expected, and we'll say so honestly in every model card.
 
+## Digit Model — In Development
+
+The digits model is under development, using a new preprocessing approach designed by OpenMTS: **RandLook**.
+
+### What is RandLook?
+
+RandLook is a preprocessing step that extracts a target (digit, shape) from an image. It works by randomizing the image's colors to isolate the target, then crops to it. The extracted target is then passed to an SVC for classification.
+
+**Goal:** handle images where simple thresholding and cropping fail — noise, shadows, uneven lighting, complex backgrounds.
+
+**Status:** in development. RandLook will be used in the digits model.
+
 ---
 
 ## Roadmap
