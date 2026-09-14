@@ -26,7 +26,8 @@ from openmts import GenderPredModel
 model = GenderPredModel("plus")
 gender, confidence = model.predict(face_image)
 
-# → "male"/"female"
+# → "male"/"female" one shot
+```
 ---
 
 ## Coming soon — first 4 new vision models
