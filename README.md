@@ -2,15 +2,35 @@
 
 **Pretrained classical ML models. One import. Many jobs.**
 
-> ⚠️ **This library is not ready yet.**
-> Models are being trained. The API is being built. Nothing works right now.
-> Star the repo to follow along.
+> 🚧 **Early development.**  
+> ✅ **1 model family shipped:** `face_gender` (nano / baseline / plus)  
+> 🔜 4 more vision models coming.
 
 ---
 
-## Coming soon — first 5 vision models
+## What is OpenMTS?
 
-- `face_gender` — male / female
+OpenMTS is a pretrained model zoo for **classical machine learning** — not deep learning.
+
+Tiny models. CPU-only. Fully offline. One simple API.
+
+No GPU. No CUDA. No cloud. No 100MB downloads.
+
+---
+
+## What works right now
+
+```python
+from openmts import GenderPredModel
+
+model = GenderPredModel("plus")
+gender, confidence = model.predict(face_image)
+
+# → "male"/"female"
+---
+
+## Coming soon — first 4 new vision models
+
 - `digit` — 0–9 recognition
 - `face_emotion` — happy / sad / angry / …
 - `face_mask` — mask / no mask
@@ -42,17 +62,29 @@ OpenMTS is for when you want something simple, tiny, offline, and multi-purpose 
 
 ## Benchmarks & Model Accuracy
 
-**Benchmarks are coming. Models are coming.**
+Every model in OpenMTS is measured and documented.
 
-OpenMTS is in early development. Right now, there are no released models and no published numbers — because there is nothing to measure yet.
+Each model ships in three tiers — **nano**, **baseline**, and **plus** — trading speed and size for accuracy.
 
-When models ship, this section will include:
+### face_gender
 
-- Accuracy per model (nano / baseline / pro)
-- Training dataset + split used
+| Tier | Algorithm | Test Accuracy | Train Time |
+|---|---|---|---|
+| nano | Decision Tree | 70.01% | ~40 seconds |
+| baseline | HistGradientBoosting | 86.04% | ~1.5 minutes |
+| plus | SVM (RBF) | 87.58% | ~109 minutes |
+
+Trained on UTKFace (20,000 images, 80/20 train/test split).
+
+For each model, the following is published:
+
+- Accuracy per tier
+- Training dataset and split
 - Model file size
 - Inference speed (CPU)
-- Known limitations and failure cases
+- Known limitations and failure modes
+
+Benchmarks are published as models ship.
 
 ### Why we publish benchmarks
 
