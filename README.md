@@ -14,7 +14,7 @@ OpenMTS is a pretrained model zoo for **classical machine learning** — not dee
 
 Tiny models. CPU-only. Fully offline. One simple API.
 
-No GPU. No CUDA. No cloud. No 100MB downloads.
+No GPU. No CUDA. No cloud.
 
 ---
 
