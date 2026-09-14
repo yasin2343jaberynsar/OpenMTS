@@ -120,6 +120,5 @@ Deep learning (YOLO, Hugging Face, etc.) can beat OpenMTS on hard tasks. That's 
 ## Status
 
 🚧 **Pre-release.**
-Nothing works yet. 5 vision models are on the way.
 
 ⭐ Star to follow along.
