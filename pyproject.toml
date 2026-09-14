@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openmts"
+version = "0.0.1"
+description = "Pretrained classical ML models. One import. Many jobs."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "joblib",
+    "opencv-python>=4.8.0,<5.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["openmts*"]
