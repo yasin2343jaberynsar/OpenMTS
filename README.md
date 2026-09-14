@@ -24,9 +24,9 @@ No GPU. No CUDA. No cloud. No 100MB downloads.
 from openmts import GenderPredModel
 
 model = GenderPredModel("plus")
-gender, confidence = model.predict(face_image)
+gender = model.predict(face_image)
 
-# → "male"/"female" one shot
+# → "male" / "female" one shot
 ```
 ---
 
