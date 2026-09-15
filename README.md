@@ -41,6 +41,18 @@ Each model will ship in **three tiers**: nano, baseline, plus.
 
 ---
 
+## Next Model
+
+The next model to ship is **`face_mask`** — mask / no mask.
+
+`digit` was planned next, but its real-world support is still in progress. It will ship once it works reliably outside MNIST-style images.
+
+`face_mask` is simpler to get right, so it ships first.
+
+Expected in a few days.
+
+---
+
 ## Honest about limits
 
 OpenMTS uses **classical ML**, not deep learning.
