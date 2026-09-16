@@ -1,13 +1,5 @@
 # OpenMTS - Open-source Machinelearning Toolset
 
-**Pretrained classical ML models. One import. Many jobs.**
-
-> 🚧 **Early development.**  
-> ✅ **1 model family shipped:** `face_gender` (nano / baseline / plus)  
-> 🔜 4 more vision models coming.
-
----
-
 ## What is OpenMTS?
 
 OpenMTS is a pretrained model zoo for **machine learning & deep learning**.
@@ -21,7 +13,7 @@ Many models pretrained, In one simple API.
 ```python
 from openmts import GenderPredModel
 
-model = GenderPredModel("plus") # note this is deprecated, we are rebuilding the gender_prediction model in DL
+model = GenderPredModel("plus") # note : this is deprecated, we are rebuilding the gender_prediction model in DL
 gender = model.predict(face_image)
 
 # → "male" / "female" one shot 
