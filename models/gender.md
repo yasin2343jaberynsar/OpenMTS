@@ -9,7 +9,23 @@ Gender classification — male / female.
 - Parameters: 3.3M
 - Size: ~38 MB
 
-Accuracy is limited by hardware constraints (8GB VRAM, 16GB RAM). Optimizations are in progress.
+**Hardware used:**
+- GPU: NVIDIA RTX 3060 Ti (8GB VRAM)
+- CPU: Intel i5-9400F
+- RAM: 16GB
+- Framework: Keras 3 with PyTorch backend
+- Training data: 128×128 RGB images
+
+**Target and outcome:**
+The goal was 90% accuracy. It was not reached due to hardware limitations.
+
+**Architecture constraints:**
+The network is missing standard components due to these limitations:
+- No BatchNorm (GPU could not handle it)
+- No `padding='same'` on Conv2D layers (training degraded when applied)
+
+**Note:**
+This Plus model has significantly better real-world performance than the previous classical Plus.
 
 ## Status
 
