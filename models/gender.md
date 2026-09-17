@@ -6,7 +6,7 @@ Gender classification — male / female.
 
 - Test accuracy: 88.6% (UTKFace)
 - Real-world accuracy: 80–85%
-- Parameters: 3.3M
+- Total parameters: 9,945,128
 - Size: ~38 MB
 
 **Hardware used:**
