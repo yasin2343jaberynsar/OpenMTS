@@ -80,6 +80,5 @@ Each model will ship in **three tiers**: nano, baseline, plus.
 - [ ] Text models
 - [ ] 100 models
 
-We're fixing it. Nothing ships until it works on real data.
 
 ⭐ Star to follow along.
