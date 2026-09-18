@@ -19,5 +19,5 @@ dependencies = [
     "keras"
 ]
 
-[tool.setuptools.packages.find]
-include = ["openmts*"]
+[tool.setuptools]
+py-modules = ["openmts"]
